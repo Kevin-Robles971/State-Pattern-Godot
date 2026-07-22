@@ -1,10 +1,8 @@
-class_name State
-extends RefCounted
+class_name IdleState
+extends State
 
-var enemy:CharacterBody2D
-var player:CharacterBody2D
 func enter() -> void:
-	pass
+	enemy.play_animation("idle")
 
 func update(delta: float) -> void:
 	pass

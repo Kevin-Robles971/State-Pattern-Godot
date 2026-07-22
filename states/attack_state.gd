@@ -1,9 +1,8 @@
-class_name State
-extends RefCounted
+class_name AttackState
+extends State
 
-var enemy:CharacterBody2D
-var player:CharacterBody2D
 func enter() -> void:
+	enemy.play_animation("attack")
 	pass
 
 func update(delta: float) -> void:

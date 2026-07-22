@@ -1,15 +1,15 @@
-class_name State
-extends RefCounted
+class_name ChaseState
+extends State
 
-var enemy:CharacterBody2D
-var player:CharacterBody2D
 func enter() -> void:
+	enemy.play_animation("chase")
 	pass
 
 func update(delta: float) -> void:
 	pass
 
 func physics_update(delta: float) -> void:
+	enemy.chanse_player()
 	pass
 
 func exit() -> void:
