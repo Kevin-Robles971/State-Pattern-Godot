@@ -1,3 +1,14 @@
 [gd_scene format=3 uid="uid://c5eni3bd2uo4r"]
 
+[ext_resource type="PackedScene" uid="uid://cnox746nopkh2" path="res://entities/enemy/enemy.tscn" id="1_gnmsn"]
+[ext_resource type="PackedScene" uid="uid://boyuw3cd8xhlv" path="res://entities/player/player.tscn" id="2_h6jsf"]
+
 [node name="wold" type="Node2D" unique_id=905911089]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1098821729]
+zoom = Vector2(3, 3)
+
+[node name="player" parent="." unique_id=1707638827 instance=ExtResource("2_h6jsf")]
+position = Vector2(-156, 6)
+
+[node name="enemy" parent="." unique_id=1884640107 instance=ExtResource("1_gnmsn")]

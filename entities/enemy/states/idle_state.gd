@@ -1,15 +1,13 @@
-class_name ChaseState
+class_name IdleState
 extends State
 
 func enter() -> void:
-	enemy.play_animation("chase")
-	pass
+	enemy.play_animation("idle", "idle")
 
 func update(delta: float) -> void:
 	pass
 
 func physics_update(delta: float) -> void:
-	enemy.chanse_player()
 	pass
 
 func exit() -> void:

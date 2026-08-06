@@ -1,8 +1,9 @@
-class_name IdleState
+class_name AttackState
 extends State
 
 func enter() -> void:
-	enemy.play_animation("idle")
+	enemy.play_animation("attack", "attack")
+	pass
 
 func update(delta: float) -> void:
 	pass
